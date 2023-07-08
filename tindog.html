@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="tindog.css" />
+   </head>
+   <body>
+      <div class="container" id="container">
+         <header>
+            <img class="icon" src="./images/icon-profile.png" alt="" />
+            <img class="logo" src="./images/logo.png" alt="" />
+            <img class="icon" src="./images/icon-chat.png" alt="" />
+         </header>
+         <main>
+            <img
+               id="like"
+               class="hidden badge"
+               src="./images/badge-like.png"
+               alt=""
+            />
+            <img
+               id="dislike"
+               class="hidden badge"
+               src="./images/badge-nope.png"
+               alt=""
+            />
+            <div class="profile" id="profile">
+               <!-- dog info here -->
+            </div>
+         </main>
+         <section>
+            <img
+               id="cross"
+               data-disliked="1"
+               class="btn dislike"
+               src="./images/icon-cross.png"
+               alt=""
+            />
+            <img
+               id="heart"
+               class="btn like"
+               src="./images/icon-heart.png"
+               data-like="1"
+               alt=""
+            />
+         </section>
+
+         <script src="tindog.js" type="module"></script>
+      </div>
+   </body>
+</html>
